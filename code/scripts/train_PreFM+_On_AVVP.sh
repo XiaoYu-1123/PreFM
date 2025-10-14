@@ -1,0 +1,34 @@
+python main_PreFM_On_AVVP.py \
+--seed 87 \
+--mode train \
+--model PreFM_On_AVVP_Net \
+--model_name PreFM+_On_AVVP \
+--gpu 3 \
+--batch_size 128 \
+--val_batch_size 60 \
+--epochs 60 \
+--pd_dir_train ./data_info/LLP/train_pd.csv \
+--pd_dir_val ./data_info/LLP/val_pd.csv \
+--pd_dir_test ./data_info/LLP/test_pd.csv \
+--audio_dir ../dataset/LLP/data/CLAP \
+--visual_dir ../dataset/LLP/data/CLIP \
+--st_dir ../dataset/LLP/data/st \
+--label_dir ../dataset/LLP/label/label \
+--f_label_dir ../dataset/LLP/label/feature_label \
+--optimizer adamw \
+--weight_decay 1e-4 \
+--scheduler warm_up_cos_anneal \
+--warm_up_epoch 10 \
+--grad_norm 1.0 \
+--lr 5e-4 \
+--lr_min 5e-6 \
+--beta1 0.5 \
+--eps 1e-8 \
+--hidden_dim 256 \
+--nhead 8 \
+--ff_dim 1024 \
+--num_layers 4 \
+--norm_where post_norm \
+--future_length 5 \
+
+# bash scripts/train_PreFM+_On_AVVP.sh | tee ./logs/PreFM+_On_AVVP/1013res.txt
