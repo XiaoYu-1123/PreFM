@@ -107,7 +107,7 @@ The training progress and final results will be logged to the specified file.
 
 ## Acknowledgements
 
-Our implementation builds upon open-source resources from **[VALOR](https://github.com/Franklin905/VALOR)**, **[LLP](https://github.com/YapengTian/AVVP-ECCV20)**, **[UnAV-100](https://github.com/ttgeng233/UnAV)** and **[OnePeace](https://github.com/OFA-Sys/ONE-PEACE)**. We thank their authors for sharing their datasets and pre-trained models.
+Our implementation builds upon open-source resources from **[VALOR](https://github.com/Franklin905/VALOR)**, **[LLP](https://github.com/YapengTian/AVVP-ECCV20)**, **[UnAV-100](https://github.com/ttgeng233/UnAV)** and **[OnePeace](https://github.com/OFA-Sys/ONE-PEACE)**. We thank their authors for sharing their code, datasets and pre-trained models.
 
 ## Citation
 
